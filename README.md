@@ -19,9 +19,9 @@ The final approach uses a pretrained ResNet18 model with RGB images.
 
 Instead of training an entire convolutional neural network from scratch, the model begins with visual features learned from ImageNet. The final classification layer is adapted for this project's classes and then trained on the project dataset.
 
-This resulted in a best validation accuracy of:
+The selected model achieved a final test accuracy of:
 
-**89.79%**
+**90.25%**
 
 Training performance improved steadily over 20 epochs. Validation performance began stabilizing around 88–90%, while training loss continued decreasing.
 
