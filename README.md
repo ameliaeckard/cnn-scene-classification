@@ -26,15 +26,13 @@ The selected model achieved a final test accuracy of:
 Training performance improved steadily over 20 epochs. Validation performance began stabilizing around 88–90%, while training loss continued decreasing.
 
 Example final training output:
-
-```text
-Epoch 16/20 | train loss 0.2156 | val loss 0.3421 | val acc 0.8854
-Epoch 17/20 | train loss 0.2086 | val loss 0.3330 | val acc 0.8875
-Epoch 18/20 | train loss 0.1877 | val loss 0.3360 | val acc 0.8979
-Epoch 19/20 | train loss 0.1837 | val loss 0.3331 | val acc 0.8854
-Epoch 20/20 | train loss 0.1808 | val loss 0.3358 | val acc 0.8812
-
-Best validation accuracy: 0.8979
+    Epoch 16/20 | train loss 0.2156 | val loss 0.3421 | val acc 0.8854
+    Epoch 17/20 | train loss 0.2086 | val loss 0.3330 | val acc 0.8875
+    Epoch 18/20 | train loss 0.1877 | val loss 0.3360 | val acc 0.8979
+    Epoch 19/20 | train loss 0.1837 | val loss 0.3331 | val acc 0.8854
+    Epoch 20/20 | train loss 0.1808 | val loss 0.3358 | val acc 0.8812
+    
+    Best validation accuracy: 0.8979
 
 ## Reproducing the Experiment
 
