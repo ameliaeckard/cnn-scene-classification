@@ -27,9 +27,11 @@ Some representative ways I used ChatGPT during the project were:
 
 ## Example of a Questionable or Ineffective AI Suggestion
 
-One suggestion from ChatGPT was to consider choosing the saved model checkpoint based on the lowest validation loss rather than only the highest validation accuracy.
+One AI-assisted experiment involved aggressive image transformations. I tested four-way flip augmentation using the original image, a horizontal flip, a vertical flip, and a horizontal-plus-vertical flip.
 
-This was not necessarily right for the way I was approaching the project because my experiments were being compared using validation accuracy. I did not automatically change my experimental procedure based on it. I kept the reported metric consistent across experiments and used the actual validation results from my training runs.
+I initially thought increasing the effective size and spatial variety of the training set might reduce overfitting. Instead, validation accuracy decreased from the 49.79% baseline to 47.08%.
+
+The result showed that not every augmentation is appropriate for scene recognition. In particular, vertical flips can create unrealistic orientations for natural and indoor scenes. I rejected this augmentation rather than keeping it simply because it increased the amount of training data.
 
 ## How I Verified AI Assistance
 
