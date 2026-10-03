@@ -35,3 +35,41 @@ Epoch 19/20 | train loss 0.1837 | val loss 0.3331 | val acc 0.8854
 Epoch 20/20 | train loss 0.1808 | val loss 0.3358 | val acc 0.8812
 
 Best validation accuracy: 0.8979
+
+## Reproducing the Experiment
+
+1. Clone this repository.
+2. Install the dependencies in `requirements.txt`.
+3. Download the assignment dataset.
+4. Organize the dataset with `train/` and `test/` directories containing one folder per class.
+5. Update `PROJECT_ROOT` in the notebook to point to the local dataset.
+6. Run `notebooks/ITCS_6169_8169_Assignment1_2026_Starter.ipynb` from top to bottom.
+7. The notebook uses seed 0 and an 80/20 split of the provided training data.
+8. The final model uses an ImageNet-pretrained ResNet18 with the convolutional backbone frozen and a new 16-class output layer.
+
+## Final Configuration
+
+- Architecture: ResNet18
+- Initialization: ImageNet-1K pretrained weights
+- Input: RGB
+- Input resolution: 224 x 224
+- Training images: 1,920
+- Validation images: 480
+- Test images: 400
+- Batch size: 64
+- Optimizer: Adam
+- Learning rate: 0.001
+- Epochs: 20
+- Loss: CrossEntropyLoss
+- Random seed: 0
+- Pretrained backbone: Frozen
+- Trainable layer: Final 512-to-16 fully connected classification layer
+- Model selection: Highest validation accuracy
+- Best validation accuracy: 89.79%
+- Final test accuracy: 90.25%
+
+## Model Checkpoint
+
+The checkpoint used for the final evaluation is:
+
+`resnet18_scene_classifier_best.pth`
