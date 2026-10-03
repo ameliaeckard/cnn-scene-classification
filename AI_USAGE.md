@@ -43,11 +43,11 @@ All reported results came directly from my own program runs.
 
 ## Decision I Made Independently
 
-An important experimental decision I made was to use **RGB input and a pretrained ResNet18 for the final model** after examining the results of my earlier experiments.
+An important decision I made was to use validation accuracy consistently as the model-selection metric and to reject experiments that did not improve generalization.
 
-The RGB experiment improved validation accuracy from the 49.79% baseline to 51.88%, showing that color contained useful information. However, that improvement was still relatively small. My final model used RGB input with transfer learning through a pretrained ResNet18 and reached a best validation accuracy of 89.79%.
+The four-way flip experiment reduced validation accuracy from 49.79% to 47.08%, so I did not keep that augmentation in the final system. The RGB experiment improved validation accuracy to 51.88%, providing evidence that color information was useful. I then evaluated transfer learning with ResNet18 and selected that model based on its substantially higher validation accuracy of 89.79%.
 
-I made the decision based on the actual results of my experiments rather than simply accepting an AI recommendation.
+The final choice was therefore based on the measured results of controlled experiments rather than accepting every suggested modification.
 
 ## Summary
 
