@@ -1,5 +1,7 @@
 # CNN Scene Classification _(cnn-scene-classification)_
 
+Lab report: [CNN Scene Classification](https://lab.ameliaeckard.com/notes/2026-09-26-cnn-scene-classification)
+
 A 16-class scene-recognition study comparing CNN baselines, preprocessing, augmentation, and transfer learning.
 
 ## Background
@@ -47,7 +49,3 @@ The final model uses ImageNet-pretrained ResNet18 with a frozen convolutional ba
 ## Contributing
 
 Issues are welcome for bugs or documentation problems. Please open an issue before a substantial pull request.
-
-## License
-
-UNLICENSED © Amelia Eckard.
